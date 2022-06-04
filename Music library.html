@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body >
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.jpeg" alt="no img" class="logo" width="100px">
+         <ul id="menu">
+             <li><a href="#">HOME</a></li>
+             <li><a href="#">ABOUT</a></li>
+             <li><a href="#">SPECIFICATIONS</a></li>
+             <li><a href="#">PRODUCTS</a></li>
+             <li><a href="#">CONNECT</a></li>
+         </ul>
+        </div>
+        <div class="all" >
+            <h1 id="all">PLAY ALL SONGS</h1>
+        </div>
+        <img src="images/2.jpg" alt="no img" class="music_picture" id="cover">
+        <div class="container2">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/2.jpg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/3.jpg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/4.jpeg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/5.jpeg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/6.jpeg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/7.jpeg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/8.jpg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/9.jpg" alt="no img"></div>
+                    <div class="swiper-slide"><img src="images/0.jpg" alt="no img"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left_col"><h1>THE <br>ULTIMATE <br>SOUND</h1></div>
+            <div class="mid_col">
+                <ul id="songs">
+                    <li id="1">Tere Hone laga hu</li>
+                    <li id="2">Mayaboho biharini</li>
+                    <li id="3">Ik mulaqat</li>
+                    <li id="4">Dil ibadat</li>
+                    <li id="5">Amar Parano jaha chay</li>
+                    <li id="6">Ashiquibazi-Ashiqui 2</li>
+                    <li id="7">Shayad</li>
+                    <li id="8">Majhe Majhe tobo</li>
+                    <li id="9">Purano Sei Diner kotha</li>
+                </ul>
+            </div>
+            <div class="right_col">
+                <p>Click Here to Listen    </p>
+                <img src="images/play.png" alt="no img" class="play" id="icon">
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+    <audio src="music/y2mate.com - Tera Hone Laga Hoon Lyrical  Ajab Prem Ki Ghazab Kahani  Atif Aslam  Ranbir Katrina K  Pritam.mp3" id="mysong"></audio>
+
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var mysong=document.getElementById("mysong");
+        var play_all=document.getElementById("all");
+        var icon = document.getElementById("icon");
+        var song = document.getElementById("1");
+        var song2 = document.getElementById("2");
+        var song3 = document.getElementById("3");
+        var song4 = document.getElementById("4");
+        var song5 = document.getElementById("5");
+        var song6 = document.getElementById("6");
+        var song7 = document.getElementById("7");
+        var song8 = document.getElementById("8");
+        var song9 = document.getElementById("9");
+        play_all.onclick=function(){
+            document.getElementById("mysong").src='music/y2mate.com - Tera Hone Laga Hoon Lyrical  Ajab Prem Ki Ghazab Kahani  Atif Aslam  Ranbir Katrina K  Pritam.mp3'
+            document.getElementById("1").style.color='red';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png';
+            document.getElementById("cover").src='images/2.jpg'
+            mysong.onended = (event) => {
+                document.getElementById("mysong").src='music/Mayaboho.mp3'
+                document.getElementById("2").style.color='red';
+                document.getElementById("1").style.color='white';
+                document.getElementById("4").style.color='white';
+                document.getElementById("3").style.color='white';
+                document.getElementById("5").style.color='white';
+                document.getElementById("6").style.color='white';
+                document.getElementById("7").style.color='white';
+                document.getElementById("8").style.color='white';
+                document.getElementById("9").style.color='white';
+                mysong.play();
+                document.getElementById("icon").src='images/pause.png'
+                document.getElementById("cover").src='images/3.jpg'
+                mysong.onended = (event) => {
+                    document.getElementById("mysong").src='music/Ik_mulaqat.mp3'
+                    document.getElementById("3").style.color='red';
+                    document.getElementById("1").style.color='white';
+                    document.getElementById("2").style.color='white';
+                    document.getElementById("4").style.color='white';
+                    document.getElementById("5").style.color='white';
+                    document.getElementById("6").style.color='white';
+                    document.getElementById("7").style.color='white';
+                    document.getElementById("8").style.color='white';
+                    document.getElementById("9").style.color='white';
+                    mysong.play();
+                    document.getElementById("icon").src='images/pause.png'
+                    document.getElementById("cover").src='images/4.jpeg' 
+                    mysong.onended = (event) => {
+                        document.getElementById("mysong").src='music/y2mate.com - Dil Ibadat Full song Lyrics  Tum Mile   KK  Emraan Hashmi Heart touching song.mp3'
+                        document.getElementById("4").style.color='red';
+                        document.getElementById("1").style.color='white';
+                        document.getElementById("2").style.color='white';
+                        document.getElementById("3").style.color='white';
+                        document.getElementById("5").style.color='white';
+                        document.getElementById("6").style.color='white';
+                        document.getElementById("7").style.color='white';
+                        document.getElementById("8").style.color='white';
+                        document.getElementById("9").style.color='white';
+                        mysong.play();
+                        document.getElementById("icon").src='images/pause.png'
+                        document.getElementById("cover").src='images/5.jpeg'
+                        mysong.onended = (event) => {
+                            document.getElementById("mysong").src='music/Amar_parano.mp3'
+                            document.getElementById("5").style.color='red';
+                            document.getElementById("1").style.color='white';
+                            document.getElementById("2").style.color='white';
+                            document.getElementById("3").style.color='white';
+                            document.getElementById("4").style.color='white';
+                            document.getElementById("6").style.color='white';
+                            document.getElementById("7").style.color='white';
+                            document.getElementById("8").style.color='white';
+                            document.getElementById("9").style.color='white';
+                            mysong.play();
+                            document.getElementById("icon").src='images/pause.png'
+                            document.getElementById("cover").src='images/6.jpeg'
+                            mysong.onended = (event) => {
+                                document.getElementById("mysong").src='music/Ashiquibaji.mp3'
+                                document.getElementById("6").style.color='red';
+                                document.getElementById("1").style.color='white';
+                                document.getElementById("2").style.color='white';
+                                document.getElementById("3").style.color='white';
+                                document.getElementById("5").style.color='white';
+                                document.getElementById("7").style.color='white';
+                                document.getElementById("4").style.color='white';
+                                document.getElementById("8").style.color='white';
+                                document.getElementById("9").style.color='white';
+                                mysong.play();
+                                document.getElementById("icon").src='images/pause.png'
+                                document.getElementById("cover").src='images/7.jpeg' 
+                                mysong.onended = (event) => {
+                                    document.getElementById("mysong").src='music/Shayad.mp3'
+                                    document.getElementById("7").style.color='red';
+                                    document.getElementById("1").style.color='white';
+                                    document.getElementById("2").style.color='white';
+                                    document.getElementById("3").style.color='white';
+                                    document.getElementById("4").style.color='white';
+                                    document.getElementById("5").style.color='white';
+                                    document.getElementById("6").style.color='white';
+                                    document.getElementById("8").style.color='white';
+                                    document.getElementById("9").style.color='white';
+                                    mysong.play();
+                                    document.getElementById("icon").src='images/pause.png'
+                                    document.getElementById("cover").src='images/8.jpg'
+                                    mysong.onended = (event) => {
+                                        document.getElementById("mysong").src='music/Majhe_majhe.mp3'
+                                        document.getElementById("8").style.color='red';
+                                        document.getElementById("1").style.color='white';
+                                        document.getElementById("2").style.color='white';
+                                        document.getElementById("3").style.color='white';
+                                        document.getElementById("4").style.color='white';
+                                        document.getElementById("5").style.color='white';
+                                        document.getElementById("6").style.color='white';
+                                        document.getElementById("7").style.color='white';
+                                        document.getElementById("9").style.color='white';
+                                        mysong.play();
+                                        document.getElementById("icon").src='images/pause.png'
+                                        document.getElementById("cover").src='images/9.jpg'
+                                        mysong.onended = (event) => {
+                                            document.getElementById("mysong").src='music/Purano_din.mp3'
+                                            document.getElementById("9").style.color='red';
+                                            document.getElementById("1").style.color='white';
+                                            document.getElementById("2").style.color='white';
+                                            document.getElementById("3").style.color='white';
+                                            document.getElementById("4").style.color='white';
+                                            document.getElementById("5").style.color='white';
+                                            document.getElementById("6").style.color='white';
+                                            document.getElementById("7").style.color='white';
+                                            document.getElementById("8").style.color='white';
+                                            mysong.play();
+                                            document.getElementById("icon").src='images/pause.png'
+                                            document.getElementById("cover").src='images/0.jpg' 
+                                        }
+                                    } 
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            };
+        }
+        song.onclick=function(){
+            document.getElementById("mysong").src='music/y2mate.com - Tera Hone Laga Hoon Lyrical  Ajab Prem Ki Ghazab Kahani  Atif Aslam  Ranbir Katrina K  Pritam.mp3'
+            document.getElementById("1").style.color='red';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png';
+            document.getElementById("cover").src='images/2.jpg'  
+        }
+        song2.onclick=function function0(){
+            document.getElementById("mysong").src='music/Mayaboho.mp3'
+            document.getElementById("2").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/3.jpg'
+        }
+        song3.onclick=function function01(){
+            document.getElementById("mysong").src='music/Ik_mulaqat.mp3'
+            document.getElementById("3").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/4.jpeg'
+        }
+        song4.onclick=function function1(){
+            document.getElementById("mysong").src='music/y2mate.com - Dil Ibadat Full song Lyrics  Tum Mile   KK  Emraan Hashmi Heart touching song.mp3'
+            document.getElementById("4").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/5.jpeg'  
+        }
+        
+        song5.onclick=function function2(){
+            document.getElementById("mysong").src='music/Amar_parano.mp3'
+            document.getElementById("5").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/6.jpeg'
+        }
+        song6.onclick=function function3(){
+            document.getElementById("mysong").src='music/Ashiquibaji.mp3'
+            document.getElementById("6").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/7.jpeg'
+        }
+        song7.onclick=function function4(){
+            document.getElementById("mysong").src='music/Shayad.mp3'
+            document.getElementById("7").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("8").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/8.jpg'
+        }
+        song8.onclick=function function5(){
+            document.getElementById("mysong").src='music/Majhe_majhe.mp3'
+            document.getElementById("8").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("9").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/9.jpg'
+        }
+        song9.onclick=function function6(){
+            document.getElementById("mysong").src='music/Purano_din.mp3'
+            document.getElementById("9").style.color='red';
+            document.getElementById("1").style.color='white';
+            document.getElementById("2").style.color='white';
+            document.getElementById("3").style.color='white';
+            document.getElementById("4").style.color='white';
+            document.getElementById("5").style.color='white';
+            document.getElementById("6").style.color='white';
+            document.getElementById("7").style.color='white';
+            document.getElementById("8").style.color='white';
+            mysong.play();
+            document.getElementById("icon").src='images/pause.png'
+            document.getElementById("cover").src='images/0.jpg'
+        }
+        
+        var i=0;
+        
+
+        icon.onclick = function(){
+            i=i+1;
+            if(i%2 == 0){
+            mysong.pause();
+            document.getElementById("icon").src='images/play.png'
+            }
+            else{
+                mysong.play();
+                document.getElementById("icon").src='images/pause.png'
+            }
+            }
+
+
+            const swiper = new Swiper('.swiper',{
+                autoplay:{
+                    delay:2000,
+                    disableonInteraction : false,
+                },
+                loop:true,
+                pagination:{
+                    el:'.swiper-pagination',
+                    clickable:true,
+                },
+
+                navigation:{
+                    nextE1: '.swiper-button-next',
+                    prevE1: '.swiper-button-prev',
+                },
+            });
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 2px solid green;
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .left_col{
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 0px 70px;
+}
+
+.content .left_col h1{
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right_col{
+    float:right;
+    margin-right: 70px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.content .right_col p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 30px;
+}
+
+.content .right_col .play{
+    width: 50px;
+    cursor: pointer;
+}
+.content .mid_col{
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.content .mid_col ul li{
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: antiquewhite;
+    padding :10px 40px 10px 40px;
+}
+
+.music_picture{
+    float:right;
+    width: 400px;
+    margin: 20px 120px 0px 0px ;
+}
+
+.right_below h1{
+    color: rgb(237, 84, 114);
+}
+
+.container2{
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px 0px 0px 1000px;
+}
+
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color:azure;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background-color: cornsilk;
+}
+
+#menu li a:hover{
+    color:rgb(255, 234, 0);
+    font-size: 1.75rem;
+}
+
+
+#icon:hover{
+    width: 60px;
+}
+
+#cover:hover{
+    width:430px;
+}
+
+#songs:hover{
+    font-size: 1.75rem;
+    color:coral;
+}
+
+.all h1{
+    cursor: pointer;
+}
+
+.all h1:hover{
+    color:crimson;
+    font-size: 3rem
+}
